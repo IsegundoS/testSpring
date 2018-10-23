@@ -9,5 +9,15 @@
          http://www.springframework.org/schema/context/spring-context.xsd
          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 		<bean id = "factura" class = "pruebaFactura.Factura" />
-		<bean id = "dvd" class = "tester.DVDPLayer" />
+		<bean id = "dvd" class = "tester.DVDPlayer" />
+		<bean id = "mp3" class = "tester.Mp3Player" />
+		<bean id = "Bluray" class = "tester.BluRay" />
+		<bean id = "smarthphone" class = "tester.SmartPhone" />
+		
+		<bean id = "tester" class = "tester.Tester">
+			<property name="device" ref = "smarthphone"/>
+			</bean>
+			
+			
+		
 </beans>

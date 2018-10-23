@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class test {
 		public static void main (String[] args) {
-			tester test = new tester();
+			/*tester test = new tester();
 			DVDPlayer dvdPlayer = new DVDPlayer();
 			test.testDVD(dvdPlayer);
 			
@@ -14,6 +14,11 @@ public class test {
 			
 			BluRay bluRayPlayer = new BluRay();
 			test.testBluRay(bluRayPlayer);
+			*/
+			
+			ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+			Tester tester = applicationContext.getBean("tester", Tester.class);
+			tester.test();
 			
 		}
 }

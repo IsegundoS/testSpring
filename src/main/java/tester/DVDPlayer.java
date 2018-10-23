@@ -1,6 +1,6 @@
 package tester;
 
-public class DVDPlayer {
+public class DVDPlayer implements Device {
 	public void turnOn() {
 		System.out.println("DVD Player Encendido");
 	}

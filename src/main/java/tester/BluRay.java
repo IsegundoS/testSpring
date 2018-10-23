@@ -1,6 +1,6 @@
 package tester;
 
-public class BluRay {
+public class BluRay implements Device {
 	public void turnOn() {
 		System.out.println("BluRay Player Encendido");
 	}
