@@ -20,5 +20,18 @@ public class test {
 			Tester tester = applicationContext.getBean("tester", Tester.class);
 			tester.test();
 			
+			tester = applicationContext.getBean("testerDvd", Tester.class);
+			tester.test(); 
+			
+			tester = applicationContext.getBean("testerMp3", Tester.class);
+			tester.test(); 
+			
+			tester = applicationContext.getBean("testerBluRay", Tester.class);
+			tester.test(); 
+			
+			
+			
+			
+			
 		}
 }

@@ -10,14 +10,29 @@
          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 		<bean id = "factura" class = "pruebaFactura.Factura" />
 		<bean id = "dvd" class = "tester.DVDPlayer" />
-		<bean id = "mp3" class = "tester.Mp3Player" />
+		<bean id = "mp3" class = "tester.Mp3Player"/>
 		<bean id = "Bluray" class = "tester.BluRay" />
+		<bean id = "pop" class = "tester.Rock" />
+		
 		<bean id = "smarthphone" class = "tester.SmartPhone" />
 		
 		<bean id = "tester" class = "tester.Tester">
 			<property name="device" ref = "smarthphone"/>
 			</bean>
-			
-			
 		
+		<bean id = "testerDvd" class = "tester.Tester">
+			<property name="device" ref = "dvd"/>
+			</bean>	
+			
+		<bean id = "testerMp3" class = "tester.Tester">
+			<property name="device" ref = "mp3Player" />
+			</bean>	
+		
+		<bean id = "testerBluRay" class = "tester.Tester">
+			<property name="device" ref = "Bluray"/>
+			</bean>		
+			
+		<bean id = "mp3Player" class = "tester.Mp3Player">
+			<property name="PlayList" ref = "pop"/>
+			</bean>		
 </beans>
